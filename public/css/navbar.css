@@ -1,0 +1,301 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --primary-color-blue : #42047e;
+    --primary-color-green : #07f49e;
+}
+@font-face {
+    font-family: 'SF UI Text';
+    src: url("fonts/sf-ui-text-heavy.woff") format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: 'SF UI Text';
+    src: url("fonts/sf-ui-text-regular.woff") format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'SF UI Text';
+    src: url("fonts/sf-ui-text-bold.woff") format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'SF UI Text';
+    src: url("fonts/sf-ui-text-light.woff") format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 200;
+  }
+  body.nav-opened{
+    overflow: hidden;
+  }
+.nav-bar-container{
+    min-height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'SF UI Text' ,'Geologica',Helvetica,Georgia, 'Times New Roman', Times, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: var(--primary-color-blue); */
+    background-color: #41047ef9;
+    z-index: 10000000000000;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: -webkit-transform .4s ease-in-out;
+    -o-transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  }
+  .nav-bar-container.closed{
+  -webkit-transform: translateY(-250vh);
+      -ms-transform: translateY(-250vh);
+          transform: translateY(-250vh);
+}
+.nav-bar-container.opened{
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.close-nav{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+#close-nav{
+  cursor: pointer;
+  
+}
+.navbar{
+    margin-bottom: 2.674em;
+
+}
+.nav-list li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.nav-list li:hover{
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.nav-list li a{
+    color: #07f49e;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.nav-list li a:hover{
+color: #fff;
+}
+.list-item a span svg{
+  margin-bottom: -6px;
+  margin-right: 5px;
+}
+.get-in-touch h5{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+}
+.get-in-touch-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .get-in-touch-wrapper a{
+    color: #000;
+  }
+  .get-in-touch-wrapper .icon  {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .get-in-touch-wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .get-in-touch-wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    -webkit-transform: translate(-50%) rotate(45deg);
+        -ms-transform: translate(-50%) rotate(45deg);
+            transform: translate(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .get-in-touch-wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .get-in-touch-wrapper .icon:hover span,
+  .get-in-touch-wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .get-in-touch-wrapper .github:hover,
+  .get-in-touch-wrapper .github:hover .tooltip,
+  .get-in-touch-wrapper .github:hover .tooltip::before {
+    background: #080a0b;
+    color: #fff;
+  }
+  .get-in-touch-wrapper .facebook:hover,
+  .get-in-touch-wrapper .facebook:hover .tooltip,
+  .get-in-touch-wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+  }
+  
+  .get-in-touch-wrapper .twitter:hover,
+  .get-in-touch-wrapper .twitter:hover .tooltip,
+  .get-in-touch-wrapper .twitter:hover .tooltip::before {
+    background: #0f1419;
+    color: #fff;
+  }
+  
+  .get-in-touch-wrapper .instagram:hover,
+  .get-in-touch-wrapper .instagram:hover .tooltip,
+  .get-in-touch-wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    /* background: #C13584; */
+    color: #fff;
+}
+.get-in-touch-wrapper .gmail:hover,
+.get-in-touch-wrapper .gmail:hover .tooltip,
+.get-in-touch-wrapper .gmail:hover .tooltip::before{
+    background: #dcf0e4;
+    color: #000;
+}
+.get-in-touch-wrapper .linkedin:hover,
+.get-in-touch-wrapper .linkedin:hover .tooltip,
+.get-in-touch-wrapper .linkedin:hover .tooltip::before{
+    background: #0A66c2;
+    color: #fff;
+}
+.nav-last{
+  position: absolute;
+  bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  color: #ffffff72;
+}
+@media(max-width:768px){
+  .close-nav{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+}
+
+.projects-container{
+  padding: 3em 0;
+  background: #dcddde;
+}
+
+.scroll-indicator{
+  height: 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000000000000000000;
+  /* background-color: red; */
+}
+.scroll-indicator .progress-bar{
+  height: 100%;
+  width: 0;
+  border-radius: 100px;
+  background: var(--primary-color-green);
+}
+  
+  

@@ -1,0 +1,310 @@
+:root{
+    --primary-color-blue : #42047e;
+    --primary-color-green : #07f49e;
+}
+
+@media only screen and (max-width: 991px) {
+
+    html{
+        scroll-snap-type:none;
+    }
+    section{
+        height: auto !important;
+        scroll-snap-align:unset;
+        scroll-snap-stop:normal;
+    }
+    header.main-header{
+        padding: 0 3em;
+    }
+    div.page01{
+        height: auto !important;
+        padding: 3em 1.7566em 2.4442em 2.444em;
+    }
+    .landing-page-bottom-container {
+        width: 57%;
+    }
+    #pathoff , #pathoff1{
+        display: none;
+    }
+    .landing-page .landing-page-main-text-box p {
+        max-width: 50vw;
+    }
+    .landing-page{
+        /* flex-direction: column; */
+        overflow-x: hidden;
+    }
+    .card{
+        width: 360px;
+    }
+    .card-header{
+        height: 13em;
+    }
+    .projects-cards-container{
+        row-gap: 2.7648em;
+    }
+    .projects-section-container {
+        padding: 1.9557em 0;
+    }
+    .skills-section {
+        padding-top: 3.67453em;
+        padding-bottom: 3.67453em;
+    }
+    .skill-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skill-section-header {
+        padding-left: 3.432em;
+        margin-bottom: 1.9835em;
+    }
+    .skill-section-container-left , .skill-section-container-right{
+        max-width: 100%;
+    }
+    .skill-section-container-left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.13987em;
+        padding-left: 3.4896em;
+        margin-bottom: 2.538567em;
+    }
+    .skill-section-container-left .left-skill-heading h4{
+        margin-bottom: .5em;
+    }
+    .left-skill-para p{
+        margin-bottom: .5em;
+    }
+    .skill-container {
+        margin-top: 20px;
+    }
+    .who-am-i-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+    .who-am-i{
+        padding: 3.45746em 0;
+        
+    }
+    .who-am-i-left{
+        padding: 0.3463em 0 0;
+      }
+    .who-am-i-img-container img {
+        height:32.49867em;
+    }
+    .who-am-i-right {
+        padding-top: 3.3463em;
+    }
+    .who-am-i-right .who-am-i-text .who-am-i-heading h2 {
+        margin-bottom: 0.4746em;
+    }
+    .who-am-i-text{
+        padding: 0 1.6873em;
+    }
+    .contact-me-container{
+        padding-bottom: 3em;
+    }
+
+     .circle {
+        width: 100% !important;
+        box-shadow: 0 0 10px 2px white !important;
+      }
+      
+       .button-text {
+        transform: translate(-1.7rem, 0) !important;
+      }
+      
+       .circle .icon.arrow {
+        background: #fff !important;
+        transform: translate(10.999rem, 0) !important;
+      }
+      
+      .circle .icon.arrow {
+        /* transform: translate(9.5rem, 0) !important; */
+        transition: all 0.3s !important;
+      }
+      
+      .circle {
+        transform: scale(0.9) !important;
+        transition: all 0.3s !important;
+        box-shadow: 0 0 5px 0.5px white !important;
+      } 
+  }
+
+  @media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden !important;
+    }
+    header.main-header {
+        height: 8.84em;
+        background: var(--primary-color-blue);
+    }
+    header.main-header .nav-button button.nav-toggle-btn::before, header.main-header .nav-button button.nav-toggle-btn::after{
+        background-color: var(--primary-color-green);
+    }
+    #pathoff , #pathoff1{
+        display: block;
+    }
+    .xxyyzz{
+        display: block;
+        padding: 0 1.2566em 0 1.444em;
+        margin-bottom: 2em;
+      }
+      .xxyy{
+        display: none;
+      }
+      div.page01 {
+        background: var(--primary-color-blue);
+        padding: 3em 0 0;
+    }
+    .landing-page{
+        flex-direction: column;
+    }
+    .landing-page .landing-page-main-text-box {
+        padding: 0 1.2566em 0 1.444em;
+        text-align: left;
+        margin-top: 0;
+    }
+    .landing-page .landing-page-main-text-box p {
+        max-width: 100vw;
+        text-align: center;
+        margin-bottom: 1.3543em;
+    }
+    .landing-page .landing-page-main-text-box h1 {
+        text-align: center;
+    }
+    .landing-page-bottom-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .landing-page-profile-container111 svg path{
+        stroke: var(--primary-color-blue) !important;
+    }
+    .landing-page-profile-container111{
+        width: 100%;
+        display: flex;
+        padding: 6em 1.2566em 3em 1.444em;
+        justify-content: center;
+        background: var(--primary-color-green);
+    }
+    #avatar-shapes {
+        top: -21%;
+        width: 40em;
+        z-index: -1;
+        height: 126%;
+        right: -9.4em;
+        position: absolute;
+    }
+    .landing-page-main-profile-box figure {
+        margin: 0;
+        z-index: 1;
+        width: 16.334em;
+        height: 18.67em;
+        position: relative;
+        border: 0.115rem solid #fff;
+    }
+  }
+  @media only screen and (max-width: 568px){
+    header.main-header .logo img {
+        width: 10.5rem;
+    }
+    header.main-header {
+        padding: 0 1.34567em;
+        height: 6em;
+    }
+    .landing-page .landing-page-main-text-box p {
+        font-size: 1em;
+    }
+    .landing-page-bottom-container{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .landing-page .landing-page-main-text-box h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+    .landing-page-main-profile-box figure {
+        width: 14.334em;
+        height: 15.67em;
+    }
+    #avatar-shapes {
+        top: -21%;
+        width: 35em;
+        z-index: -1;
+        height: 126%;
+        right: -9.5114em;
+        position: absolute;
+    }
+    .page02-header {
+        padding-left: 1.5544em;
+        margin-bottom: 1.5456em;
+    }
+    .card{
+        width: 90%;
+    }
+    .skill-section-header {
+        padding-left: 1.1432em;
+        margin-bottom: 1.9835em;
+    }
+    .skill-section-header h2{
+        font-size: 2em;
+    }
+    .skill-section-container-left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.13987em;
+        padding-left: 1.4896em;
+        margin-bottom: 2.538567em;
+    }
+    .skill-section-container-left p{
+        font-size: 1rem;
+    }
+    .line_content .bar {
+        width: 34%;
+    }
+    .skill-section-container-right {
+        padding-left: .845em;
+    }
+    .skill-container {
+        flex-wrap: wrap;
+        padding-left: 1.5em;
+    }
+    .who-am-i{
+        padding-bottom: 2em;
+        padding-top: 0;
+    }
+    .who-am-i-img-container img {
+        height: 22.49867em;
+    }
+    .who-am-i-right {
+        padding-top: 1.3463em;
+    }
+    .who-am-i-right .who-am-i-text p {
+        font-size: 1.1111em;
+    }
+    .who-am-i-text {
+        padding: 0 0.6873em;
+    }
+    .contact-me-heading h4 {
+        font-size: 1.1em;
+    }
+    .form-first-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-control{
+        margin: 0px 0 30px;
+    }
+    .form-row2 #contact-messege{
+        width: 90%;
+    }
+    .form-row2 {
+        display: flex;
+        justify-content: center;
+    }
+    .card-header {
+        height: 11em;
+    }
+  }

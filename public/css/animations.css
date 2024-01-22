@@ -1,0 +1,90 @@
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+@keyframes fadeLeftUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(30px); /* Move the element down-right initially */
+}
+to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+  }
+@keyframes fadeRightUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) translateX(-60px); /* Move the element down-right initially */
+}
+to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+  }
+@keyframes fadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .landing-page-bottom-container1{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeRight 1s ease both;
+}
+.landing-page-bottom-container111{
+    opacity: 0;
+    transform: translateX(-30px);
+      animation: fadeLeft 1s ease both;
+
+  }
+  
+  .fullstackdevtext , .landing-page-main-text-box p , .landing-page-main-profile-box{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease both;
+  }
+  .card{
+    opacity: 0;
+  }
+ .page02.show-animate .card{
+  opacity: 0;
+  animation: fadeRight 1s ease both;
+ }
+ .skill-section-container-left , .skill-section-container-right{
+  opacity: 0;
+ }
+ .page03.show-animate .skill-section-container-left{
+  animation: fadeRightUp 1s ease both;
+ }
+ .page03.show-animate .skill-section-container-right{
+  animation: fadeRightUp 1s ease both;
+ }
+ .page04 .who-am-i .who-am-i-left ,  .page04 .who-am-i .who-am-i-right{
+  opacity: 0;
+ }
+ .page04.show-animate .who-am-i .who-am-i-left ,  .page04.show-animate .who-am-i .who-am-i-right{
+  animation: fadeUp 1s ease both;
+ }
+
