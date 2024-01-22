@@ -515,6 +515,9 @@ div.page01{
 .online-courses{
   background-image: url('../img/projects/bleb.png');
 }
+.portfolio{
+  background-image: url('../img/projects/portfolio.png');
+}
 /* =============/Projects Images=============== */
 .more-projects-link{
   width: 100%;
